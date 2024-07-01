@@ -1,0 +1,27 @@
+@import '../../../Color.scss';
+
+.dropdown {
+    padding: 10px 24px;
+    background-color: $btn;
+    color: #252B42;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: $inputBorder;
+    box-shadow: 2px 4px 0px 0px #000;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.option {
+    color: #252B42;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 700;
+   
+
+}
+
+

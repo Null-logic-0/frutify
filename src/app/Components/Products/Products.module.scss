@@ -1,0 +1,81 @@
+@import '../../Color.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    max-width: 342px;
+    width: 100%;
+    background-color: $cardBg;
+    border: $inputBorder;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    gap: 24px;
+
+}
+
+
+
+.border {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    border: $inputBorder;
+    box-shadow: $shadow;
+    border-radius: 8px;
+    padding: 16px 63px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 220px;
+    bottom: 220px;
+    gap: 8px;
+}
+
+
+.title {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 900;
+    max-width: 168px;
+    word-wrap: break-word;
+
+}
+
+.symbol {
+    font-size: 28px;
+}
+
+.price {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 36px;
+    font-weight: 900;
+
+}
+
+.description {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

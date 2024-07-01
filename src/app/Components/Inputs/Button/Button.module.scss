@@ -1,0 +1,37 @@
+@import '../../../Color.scss';
+
+.container {
+    color: $btnTextColor;
+    font-size: 28px;
+    border: $btnBorder;
+    box-shadow: $shadow;
+    background-color: $btn;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.container:hover {
+    background-color: #d79a00;
+
+}
+
+.default {
+    max-width: 238px;
+    height: 71px;
+    width: 100%;
+}
+
+.inline {
+    padding: 18px 28px;
+
+}
+
+.full{
+    max-width: 704px;
+    width: 100%;
+}
+
+.small {
+    padding: 8px;
+}

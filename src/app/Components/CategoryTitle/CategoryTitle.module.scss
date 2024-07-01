@@ -1,0 +1,21 @@
+@import '../../Color.scss';
+
+
+.heading {
+    border-radius: 4px;
+    background: $black;
+    padding-right: 3px;
+    padding-left: 2px;
+    transform: rotate(-2deg);
+
+}
+
+.title {
+    color: $white;
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: $saleColor;
+    border-radius: 4px;
+    padding: 8px 16px;
+}

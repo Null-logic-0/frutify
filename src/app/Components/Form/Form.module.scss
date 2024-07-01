@@ -1,0 +1,120 @@
+@import '../../Color.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.heading {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 704px;
+    width: 100%;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 704px;
+    width: 100%;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.symbol {
+    position: absolute;
+    pointer-events: none;
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 48px;
+    font-weight: 900;
+    right: 24px;
+}
+
+.input {
+    background-color: $inputBg;
+    border-radius: 8px;
+    border: $inputBorder;
+    box-shadow: $shadow;
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-weight: 900;
+    padding: 24px;
+
+}
+
+.btn {
+    padding: 16px;
+}
+
+.sale {
+    max-width: 160px;
+    width: 100%;
+}
+
+.price {
+    max-width: 524px;
+    width: 100%;
+}
+
+.upload::-webkit-file-upload-button {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 900;
+    border-radius: 8px;
+    border: $btnBorder;
+    box-shadow: $shadow;
+    background-color: $btn;
+    cursor: pointer;
+    margin-right: 24px;
+    padding: 16px 32px;
+
+
+}
+
+.upload:hover::-webkit-file-upload-button {
+    background-color: #e4a400;
+    ;
+}

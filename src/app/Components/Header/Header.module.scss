@@ -1,0 +1,17 @@
+@import '../../Color.scss';
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

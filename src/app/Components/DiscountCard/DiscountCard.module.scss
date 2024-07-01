@@ -1,0 +1,35 @@
+@import '../../Color.scss';
+
+.container {
+    border-radius: 8px;
+    border: $inputBorder;
+    background: $white;
+    box-shadow: $shadow;
+    max-width: 820px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.sale {
+    color: $saleColor;
+    font-family: Inconsolata;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.offer {
+    color: $offer;
+    font-family: Inconsolata;
+    font-size: 48px;
+    font-weight: 900;
+    
+}

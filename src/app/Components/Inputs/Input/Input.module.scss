@@ -1,0 +1,36 @@
+@import '../../../Color.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: $inputBorder;
+    background: $inputBg;
+    box-shadow: $shadow;
+    
+
+
+
+
+}
+
+.input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px;
+    max-width: 704px;
+    width: 100%;
+
+}
+
+.input::placeholder {
+    color: $inputText;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 500;
+}

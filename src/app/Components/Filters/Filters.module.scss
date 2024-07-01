@@ -1,0 +1,40 @@
+@import '../../Color.scss';
+
+.container {
+    border-radius: 8px;
+    border: $inputBorder;
+    background: #FFF1CC;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    max-width: 342px;
+    padding: 24px;
+    gap: 24px;
+}
+
+.inputs {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.text {
+    color: $black;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
