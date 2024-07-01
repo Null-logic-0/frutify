@@ -18,50 +18,55 @@ export default function Home() {
   ];
 
   const [showForm, setShowForm] = useState(false);
+  const [showProducts, setShowProducts] = useState(true);
 
   const handleAddProductClick = () => {
     setShowForm(true);
+    setShowProducts(true);
   };
 
   const handleFormSubmit = () => {
-    // Toggle showForm to hide the form again
-    setShowForm(false);
+    setShowForm(true);
+    setShowProducts(true);
   };
 
-
+  const handleShopClick = () => {
+    setShowProducts(!showProducts);
+  };
 
   return (
     <>
       <header className={styles.header}>
-        <Header onAddProductClick={handleAddProductClick} icon={"/Frutify.svg"} />
-
+        <Header onAddProductClick={handleAddProductClick} icon={"/Frutify.svg"} onShopClick={handleShopClick} />
       </header>
+
+
+
       <main className={styles.main}>
-        {!showForm && (
-          <div className={styles.category}>
-            <CategoryTitle title={"Fruits"} />
-            <Dropdown values={priceOptions} />
-
-          </div>
-
-        )}
-
-
-        {!showForm && (
-          <div className={styles.filters}>
-            <Filters title={"Filter"} products={"Category"} sale={"Sale"} price={"Price"} />
-            <DiscountCard text="ss" />
-
-          </div>
-        )}
-
-        {showForm ? (
+        {showForm && (
           <div className={styles.form}>
             <Form onFormSubmit={handleFormSubmit} heading={"Add new fruit"} />
           </div>
-        ) : (
-          <Products />
         )}
+        {!showForm && (
+          <>
+            <div className={styles.category}>
+              <CategoryTitle title={"Fruits"} />
+              <Dropdown values={priceOptions} />
+            </div>
+
+            {showProducts && (
+              <div className={styles.filters}>
+                <Filters title={"Filter"} products={"Category"} sale={"Sale"} price={"Price"} />
+                <div className={styles.products}>
+                  <DiscountCard text="Gori's Apple" />
+                  <Products />
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
 
       </main>
     </>

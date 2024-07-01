@@ -79,3 +79,12 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+}

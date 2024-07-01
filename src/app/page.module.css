@@ -35,8 +35,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    max-width: 1300px;
+    max-width: 1500px;
     flex-wrap: wrap;
     width: 100%;
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
 }

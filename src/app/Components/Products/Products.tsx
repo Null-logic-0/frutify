@@ -10,7 +10,7 @@ export default function Products() {
         loadProducts();
 
         const handleProductUpdate = () => {
-            loadProducts(); 
+            loadProducts();
         };
 
         window.addEventListener('productUpdate', handleProductUpdate);
@@ -18,7 +18,7 @@ export default function Products() {
         return () => {
             window.removeEventListener('productUpdate', handleProductUpdate);
         };
-    }, []); 
+    }, []);
 
     const loadProducts = () => {
         const storedProducts = JSON.parse(localStorage.getItem('products') || '[]');
@@ -32,7 +32,7 @@ export default function Products() {
         localStorage.setItem('products', JSON.stringify(updatedProducts));
     };
 
-    const edit = (index: number, updatedFields: Partial<{ name: string; description: string,price:string }>) => {
+    const edit = (index: number, updatedFields: Partial<{ name: string; description: string, price: string }>) => {
         const updatedProducts = [...products];
         updatedProducts[index] = { ...updatedProducts[index], ...updatedFields };
         setProducts(updatedProducts);
@@ -61,7 +61,7 @@ export default function Products() {
     };
 
     return (
-        <>
+        <div className={styles.wrapper}>
             {products.map((product, i) => (
                 <div className={styles.main} key={i}>
                     <div className={styles.border}>
@@ -120,9 +120,9 @@ export default function Products() {
                             <span className={styles.symbol}>{'$'}</span>
                         </span>
                     </div>
-                    <Button size='inline' title='Buy Now' />
+                    <Button size='inline' title="Buy" />
                 </div>
             ))}
-        </>
+        </div>
     );
 }
