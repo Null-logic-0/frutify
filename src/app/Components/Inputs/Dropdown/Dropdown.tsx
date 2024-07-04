@@ -6,7 +6,7 @@ type Option = {
 }
 
 interface Props {
-    onChange?: (item:any)=> void;
+    onChange?: (item:string)=> void;
     values: Option[];
 }
 

@@ -52,6 +52,7 @@ export default function Form(props: FormProps) {
     window.dispatchEvent(productUpdateEvent);
 
     setShowForm(false);
+    props?.onFormSubmit?.();
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -125,7 +126,7 @@ export default function Form(props: FormProps) {
                 Price
                 <div className={styles.wrapper}>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="0"
                     name="price"
                     value={formData.price}
@@ -139,7 +140,7 @@ export default function Form(props: FormProps) {
                 Sale
                 <div className={styles.wrapper}>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="0"
                     name="sale"
                     value={formData.sale}

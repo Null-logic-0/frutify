@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   const handleFormSubmit = () => {
-    setShowForm(true);
+    setShowForm(false);
     setShowProducts(true);
   };
 
